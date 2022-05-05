@@ -3,7 +3,6 @@ package com.htr.notas.notasapplication.service;
 import com.htr.notas.notasapplication.domain.Nota;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface INotasService {
 
@@ -14,6 +13,8 @@ public interface INotasService {
     void eliminar(Nota nota);
 
     List<Nota> listarTodo();
+
+    List<Nota> listarPorFecha();
 
     Nota listarId(Long id);
 }
