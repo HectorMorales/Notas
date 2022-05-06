@@ -4,7 +4,7 @@ import com.htr.notas.notasapplication.domain.Nota;
 
 import java.util.List;
 
-public interface INotasService {
+public interface INotaService {
 
     void agregar(Nota nota);
 

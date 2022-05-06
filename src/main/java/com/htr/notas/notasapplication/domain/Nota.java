@@ -1,13 +1,17 @@
 package com.htr.notas.notasapplication.domain;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @Table(name = "Nota")
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class Nota {
@@ -22,27 +26,4 @@ public class Nota {
     @Column(name = "fecha", nullable = true, columnDefinition = "datetime")
     public Date fecha;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getNota() {
-        return nota;
-    }
-
-    public void setNota(String nota) {
-        this.nota = nota;
-    }
-
-    public Date getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
-    }
 }

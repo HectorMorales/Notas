@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.List;
 
 @Service
-public class NotaService implements INotasService
+public class NotaService implements INotaService
 {
     @Autowired
     private INotaRepository notaRepository;
