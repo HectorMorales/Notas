@@ -1,20 +1,21 @@
 package com.htr.notas.notasapplication.service;
 
 import com.htr.notas.notasapplication.domain.Nota;
+import com.htr.notas.notasapplication.dto.NotaDTO;
 
 import java.util.List;
 
 public interface INotaService {
 
-    void agregar(Nota nota);
+    NotaDTO agregar(NotaDTO notaDTO);
 
-    void modificar(Nota nota);
+    NotaDTO modificar(NotaDTO notaDTO);
 
-    void eliminar(Nota nota);
+    void eliminar(NotaDTO notaDTO);
 
-    List<Nota> listarTodo();
+    List<NotaDTO> listarTodo();
 
-    List<Nota> listarPorFecha();
+    List<NotaDTO> listarPorFecha();
 
-    Nota listarId(Long id);
+    NotaDTO listarId(Long id);
 }

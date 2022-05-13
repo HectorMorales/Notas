@@ -15,9 +15,10 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Nota {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "nota", nullable = true, length = 800)
